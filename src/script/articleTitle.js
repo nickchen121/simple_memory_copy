@@ -43,9 +43,9 @@ $(document).ready(function () {
         // th1Html += '<b class="dev__ux"><i>0</i></b>';
         // th1Html += '<b class="dev__developer"><span class="dev__title">' + th1Text + '</span></b>';
 
-        var th1Html = '<b class=""><i></i></b>';
-        th1Html += '<span class=""></span>';
-        th1Html += '<b class=""><i></i></b>';
+        // var th1Html = '<b class=""><i></i></b>';
+        // th1Html += '<span class=""></span>';
+        // th1Html += '<b class=""><i></i></b>';
         th1Html += '<b class="dev__developer"><span class="dev__title">' + th1Text + '</span></b>';
 
 
@@ -96,9 +96,9 @@ $(document).ready(function () {
         // th2Html += '<b class="dev__ux"><i>' + (++th2num) + '</i></b>';
         // th2Html += '<b class="dev__developer"><span class="dev__title">' + th2Text + '</span></b>';
 
-        var th2Html = '<b class=""><i></i></b>';
-        th2Html += '<span class=""></span>';
-        th2Html += '<b class=""><i></i></b>';
+        // var th2Html = '<b class=""><i></i></b>';
+        // th2Html += '<span class=""></span>';
+        // th2Html += '<b class=""><i></i></b>';
         th2Html += '<b class="dev__developer"><span class="dev__title">' + th2Text + '</span></b>';
 
 
