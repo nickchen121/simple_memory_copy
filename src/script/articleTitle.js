@@ -46,7 +46,7 @@ $(document).ready(function () {
         var th1Html = '<b class=""><i></i></b>';
         th1Html += '<span class=""></span>';
         th1Html += '<b class=""><i></i></b>';
-        th1Html += '<b class=""><span class="dev__title">' + th1Text + '</span></b>';
+        th1Html += '<b class="dev__developer"><span class="dev__title">' + th1Text + '</span></b>';
 
 
         th1.append(th1Html);
@@ -99,7 +99,7 @@ $(document).ready(function () {
         var th2Html = '<b class=""><i></i></b>';
         th2Html += '<span class=""></span>';
         th2Html += '<b class=""><i></i></b>';
-        th2Html += '<b class=""><span class="dev__title">' + th2Text + '</span></b>';
+        th2Html += '<b class="dev__developer"><span class="dev__title">' + th2Text + '</span></b>';
 
 
         th2.append(th2Html);
