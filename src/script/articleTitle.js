@@ -1,6 +1,6 @@
 $(document).ready(function () {
     const cparent = 'cnblogs_post_body',
-          s       = $('#' + cparent);
+        s = $('#' + cparent);
 
     if (s.length === 0) return;
     const h = s.find(':header');
@@ -19,10 +19,12 @@ $(document).ready(function () {
 
             switch (v.tagName.toLowerCase()) {
                 case 'h1':
-                    setTh1(u);break;
+                    setTh1(u);
+                    break;
 
                 case 'h2':
-                    if (th1set) setTh2(u, i);break;
+                    if (th1set) setTh2(u, i);
+                    break;
             }
         });
     }
@@ -36,19 +38,25 @@ $(document).ready(function () {
         th1.text('');
         th1.addClass('header__dev');
 
-        var th1Html = '<b class="dev__fe"><i>' + (th1i+1) + '</i></b>';
-        th1Html += '<span class="dev__slash">|</span>';
-        th1Html += '<b class="dev__ux"><i>0</i></b>';
+        // var th1Html = '<b class="dev__fe"><i>' + (th1i + 1) + '</i></b>';
+        // th1Html += '<span class="dev__slash">|</span>';
+        // th1Html += '<b class="dev__ux"><i>0</i></b>';
+        // th1Html += '<b class="dev__developer"><span class="dev__title">' + th1Text + '</span></b>';
+
+        var th1Html = '<b class=""><i></i></b>';
+        th1Html += '<span class=""></span>';
+        th1Html += '<b class=""><i></i></b>';
         th1Html += '<b class="dev__developer"><span class="dev__title">' + th1Text + '</span></b>';
+
 
         th1.append(th1Html);
         th1.parents('.header__span').after('<br>');
 
         th1.parent(".header__span").hover(
-            function(){
+            function () {
                 $(this).find('.header__dev').addClass("header__dev--open");
-            } ,
-            function(){
+            },
+            function () {
                 $(this).find('.header__dev').removeClass("header__dev--open");
             }
         );
@@ -74,29 +82,35 @@ $(document).ready(function () {
 
         if (their.length > 0) {
             their = $(their[their.length - 1]);
-            var current  = parseInt(their.find('.dev__fe i').text());
+            var current = parseInt(their.find('.dev__fe i').text());
             if (current !== th2last) {
-                th2num  = 0;
+                th2num = 0;
             }
             th2last = current;
         } else {
             th2num = 0;
         }
 
-        var th2Html = '<b class="dev__fe"><i>' + th2last + '</i></b>';
-        th2Html += '<span class="dev__slash">|</span>';
-        th2Html += '<b class="dev__ux"><i>' + (++th2num) + '</i></b>';
+        // var th2Html = '<b class="dev__fe"><i>' + th2last + '</i></b>';
+        // th2Html += '<span class="dev__slash">|</span>';
+        // th2Html += '<b class="dev__ux"><i>' + (++th2num) + '</i></b>';
+        // th2Html += '<b class="dev__developer"><span class="dev__title">' + th2Text + '</span></b>';
+
+        var th2Html = '<b class=""><i></i></b>';
+        th2Html += '<span class=""></span>';
+        th2Html += '<b class=""><i></i></b>';
         th2Html += '<b class="dev__developer"><span class="dev__title">' + th2Text + '</span></b>';
+
 
         th2.append(th2Html);
         th2.parents('.header__span').after('<br>');
         th2.parent(".header__span").hover(
-            function(){
+            function () {
                 $(this).find('.header__dev').addClass("header__dev--open");
-            } ,
-            function(){
+            },
+            function () {
                 $(this).find('.header__dev').removeClass("header__dev--open");
             }
-        ) ;
+        );
     }
 });
