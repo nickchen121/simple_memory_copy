@@ -38,15 +38,15 @@ $(document).ready(function () {
         th1.text('');
         th1.addClass('header__dev');
 
-        // var th1Html = '<b class="dev__fe"><i>' + (th1i + 1) + '</i></b>';
-        // th1Html += '<span class="dev__slash">|</span>';
-        // th1Html += '<b class="dev__ux"><i>0</i></b>';
-        // th1Html += '<b class="dev__developer"><span class="dev__title">' + th1Text + '</span></b>';
-
-        var th1Html = '<b class=""><i></i></b>';
-        th1Html += '<span class=""></span>';
-        th1Html += '<b class=""><i></i></b>';
+        var th1Html = '<b class="dev__fe"><i>' + (th1i + 1) + '</i></b>';
+        th1Html += '<span class="dev__slash">|</span>';
+        th1Html += '<b class="dev__ux"><i>0</i></b>';
         th1Html += '<b class="dev__developer"><span class="dev__title">' + th1Text + '</span></b>';
+
+        // var th1Html = '<b class="dev__fe"><i></i></b>';
+        // th1Html += '<span class=""></span>';
+        // th1Html += '<b class=""><i></i></b>';
+        // th1Html += '<b class="dev__developer"><span class="dev__title">' + th1Text + '</span></b>';
 
 
         th1.append(th1Html);
@@ -91,15 +91,18 @@ $(document).ready(function () {
             th2num = 0;
         }
 
-        // var th2Html = '<b class="dev__fe"><i>' + th2last + '</i></b>';
-        // th2Html += '<span class="dev__slash">|</span>';
-        // th2Html += '<b class="dev__ux"><i>' + (++th2num) + '</i></b>';
-        // th2Html += '<b class="dev__developer"><span class="dev__title">' + th2Text + '</span></b>';
-
-        var th2Html = '<b class=""><i></i></b>';
-        th2Html += '<span class=""></span>';
-        th2Html += '<b class=""><i></i></b>';
+        var th2Html = '<b class="dev__fe"><i>' + th2last + '</i></b>';
+        th2Html += '<span class="dev__slash">|</span>';
+        th2Html += '<b class="dev__ux"><i>' + (++th2num) + '</i></b>';
         th2Html += '<b class="dev__developer"><span class="dev__title">' + th2Text + '</span></b>';
+
+
+        
+
+        // var th2Html = '<b class=""><i></i></b>';
+        // th2Html += '<span class=""></span>';
+        // th2Html += '<b class=""><i></i></b>';
+        // th2Html += '<b class="dev__developer"><span class="dev__title">' + th2Text + '</span></b>';
 
 
         th2.append(th2Html);
